@@ -3,7 +3,28 @@
         const header = document.querySelector("header")
         header.classList.toggle("sticky", window.scrollY > 0 )
     })
-// Services Section 
+// Services Section Modal
+    const serviceModals = document.querySelectorAll(".service-modal")
+    const learnMoreBtns = document.querySelectorAll(".learn-more-btn")
+    const modalCloseBtns = document.querySelectorAll(".modal-close-btn")
+
+    let modal = function(modalClick){
+        serviceModals[modalClick].classList.add("active");
+    }
+
+    learnMoreBtns.forEach((learnMoreBtns, i) => {
+        learnMoreBtns.addEventListener("click", () => {
+            modal(i);
+        });
+    });
+
+    modalCloseBtns.forEach((modalCloseBtns) => {
+        modalCloseBtns.addEventListener("click", () => {
+            serviceModals.forEach((modalView) => {
+                modalView.classList.remove('active');
+            });
+        });
+    });
 
 // Portfolio Section
 
