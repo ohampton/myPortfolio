@@ -516,6 +516,22 @@ header.sticky .nav-bar{
 }
 
 /* <!-- Services Section  --> */
+.services .container .content{
+    width: 100%;
+}
+
+services.description h3{
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+}
 
 
 /* <!-- Portfolio Section  --> */
