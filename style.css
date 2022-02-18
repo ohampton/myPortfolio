@@ -204,6 +204,9 @@ header.sticky .nav-bar{
     color: var(--second-color);
 }
 
+.nav-menu-btn{
+    display: none;
+}
 
 /* <!-- Home Section  --> */
 .home{
@@ -1014,3 +1017,63 @@ footer a{
 
 
 /* Media-Query All Sections  */
+@media screen and (max-width: 1070px){
+
+/* Header navigation menu  */
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--transparent-color-01);
+}
+
+.nav-items{
+    position: relative;
+    background: var(--modal-bg-color);
+    width: 600px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.nav-items a{
+    margin: 15px 50px;
+}
+
+.nav-close-btn{
+    position: absolute;
+    background: url(img/closeIcon.svg)no-repeat;
+    /* filter: var(--color-filter); */
+    background-size: 40px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.nav-menu-btn{
+    background: url(img/menuStack.svg)no-repeat;
+    /* filter: var(--color-filter); */
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+}
+
+}
