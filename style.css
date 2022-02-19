@@ -1217,7 +1217,7 @@ body{
 }
 
 .home-container .home-img{
-    position: relative;
+    position: absolute;
 }
 
 .home-container .home-img img{
