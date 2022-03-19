@@ -247,6 +247,7 @@ header.sticky .nav-bar{
     font-size: 4em;
     font-weight: 600;
     line-height: 70px;
+    padding-right: 10px;
 }
 
 .home-container .info h3{
@@ -260,6 +261,7 @@ header.sticky .nav-bar{
     color: var(--third-color);
     font-size: var(--normal-font-size);
     max-width: 350px;
+    padding-right: 10px;
 }
 
 .btn{
@@ -1218,10 +1220,11 @@ body{
 
 .home-container .home-img{
     position: absolute;
+    margin-right: 10px;
 }
 
 .home-container .home-img img{
-    width: 45%;
+    width: 40%;
     transform: translate(80px, -180px);
 }
 
