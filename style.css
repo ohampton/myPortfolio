@@ -180,10 +180,10 @@ header.sticky .nav-bar{
     height: calc(2.5rem + 1rem);
 }
 
-.nav-bar .logo .image{
-    /* color: var(--first-color); */
-    font-size: 50px; 
-    /* font-weight: 600px; */
+.nav-bar .logo {
+    color: var(--first-color);
+    font-size: 1.3rem; 
+    font-weight: 600px;
 }
 
 .nav-items a{
